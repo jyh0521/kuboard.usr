@@ -10,5 +10,4 @@
         android:text="게시판 화면"
         android:textSize="40sp"/>
 
-
 </LinearLayout>
