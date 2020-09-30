@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="쿠보드"
+        android:label="KU보드"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -23,5 +23,5 @@
     </application>
 
     <!-- 외부로의 접근을 위한 인터넷 사용 허가 설정 -->
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

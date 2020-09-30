@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "737858828474",
+    "firebase_url": "https://kuboard-b63d1.firebaseio.com",
+    "project_id": "kuboard-b63d1",
+    "storage_bucket": "kuboard-b63d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737858828474:android:3dba6f9b6a576a8df2aa83",
+        "android_client_info": {
+          "package_name": "com.example.kuboarduser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737858828474-sishg5jipkgf1pkpni6qabe7p134b47t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeUKIOpdypyGBqbKbAo6LEPQOS3TLNMqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737858828474-sishg5jipkgf1pkpni6qabe7p134b47t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
