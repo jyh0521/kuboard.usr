@@ -23,9 +23,9 @@ public class LoginPage extends AppCompatActivity {
     private Button btn_login;
     private Button btn_signUp;
 
-    private FirebaseDatabase database;
-    private DatabaseReference databaseReference;
-    private ArrayList<USR_INFO> arrayList;
+    //private FirebaseDatabase database;
+    //private DatabaseReference databaseReference;
+    //private ArrayList<USR_INFO> arrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,7 @@ public class LoginPage extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                /*
                 // 파이어베이스 디비 연동
                 database = FirebaseDatabase.getInstance();
                 databaseReference = database.getReference("USR_INFO");
@@ -59,8 +59,7 @@ public class LoginPage extends AppCompatActivity {
                         // 디비를 가져오던 중 에러 발생 시
                         Log.e("MainActivity", String.valueOf(databaseError.toException())); // 에러문 출력
                     }
-                });
-
+                });*/
 
                 Intent intent = new Intent(LoginPage.this, MainActivity.class);
                 startActivity(intent); // 로그인 페이지에서 메인 화면으로 이동
