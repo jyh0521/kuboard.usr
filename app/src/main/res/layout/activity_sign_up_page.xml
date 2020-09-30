@@ -65,8 +65,8 @@
         android:text="회원가입"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_cancel"
-        app:layout_constraintStart_toStartOf="@+id/editText_id"
-        app:layout_constraintTop_toBottomOf="@+id/editText_id"
+        app:layout_constraintStart_toStartOf="@+id/editText_email"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email"
         app:layout_constraintVertical_bias="0.275" />
 
     <Button
@@ -76,9 +76,9 @@
         android:layout_marginStart="17dp"
         android:text="취소"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editText_id"
+        app:layout_constraintEnd_toEndOf="@+id/editText_email"
         app:layout_constraintStart_toEndOf="@+id/btn_signUp"
-        app:layout_constraintTop_toBottomOf="@+id/editText_id"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email"
         app:layout_constraintVertical_bias="0.275" />
 
     <TextView
@@ -95,11 +95,12 @@
         app:layout_constraintVertical_bias="0.477" />
 
     <EditText
-        android:id="@+id/editText_id"
+        android:id="@+id/editText_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="이메일"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,7 +19,6 @@ import com.google.firebase.auth.FirebaseUser;
 public class SignUpPage extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
-    private static final String TAG = "SignUpActivity";
 
     private Button btn_signUp;
     private Button btn_cancel;
@@ -52,19 +50,16 @@ public class SignUpPage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
-       // updateUI(currentUser);
     }
 
     private void signUp() {
-        String email = ((EditText)findViewById(R.id.editText_id)).getText().toString();
+        String email = ((EditText)findViewById(R.id.editText_email)).getText().toString();
         String password = ((EditText)findViewById(R.id.editText_password)).getText().toString();
         String passwordChk = ((EditText)findViewById(R.id.editText_passwordChk)).getText().toString();
 
@@ -79,6 +74,10 @@ public class SignUpPage extends AppCompatActivity {
                                     // 회원가입 성공 시
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     startToast("회원가입에 성공하였습니다.");
+
+                                    // 로그인 페이지로 이동
+                                    Intent intent = new Intent(SignUpPage.this, LoginPage.class);
+                                    startActivity(intent);
                                 } else {
                                     // 회원가입 실패 시
                                     if (task.getException() != null) {
