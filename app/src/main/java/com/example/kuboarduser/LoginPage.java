@@ -63,8 +63,6 @@ public class LoginPage extends AppCompatActivity {
             } catch (InterruptedException e) {
             }
 
-            System.out.println(result);
-
             // PHP 창에서 ID와 PW가 일치하는지 확인
             if(result.equals("login")) {
                 Intent intent = new Intent(LoginPage.this, MainActivity.class);
