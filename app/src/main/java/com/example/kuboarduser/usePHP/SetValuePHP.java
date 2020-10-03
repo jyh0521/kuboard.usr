@@ -12,6 +12,7 @@ import java.net.URL;
 public class SetValuePHP extends Thread{
     private String url;
     private String param;
+    private String result;
 
     public SetValuePHP(String url, String param){
         this.url = url;
@@ -20,10 +21,14 @@ public class SetValuePHP extends Thread{
 
     @Override
     public void run() {
-        HttpPostData();
+         result = HttpPostData();
     }
 
-    public void HttpPostData() {
+    public String returnResult() {
+        return result;
+    }
+
+    public String HttpPostData() {
         try {
             //--------------------------
             //   URL 설정하고 접속하기
@@ -59,16 +64,18 @@ public class SetValuePHP extends Thread{
 
             String str;
             while ((str = reader.readLine()) != null) {       // 서버에서 라인단위로 보내줄 것이므로 라인단위로 읽는다
-                builder.append(str + "\n");                   // View에 표시하기 위해 라인 구분자 추가
+                builder.append(str);                   // View에 표시하기 위해 라인 구분자 추가
             }
 
-            System.out.println(builder);
+            return builder.toString();
 
         } catch (MalformedURLException e) {
             //
         } catch (IOException e) {
             //
         } // try
+
+        return "failed";
     } // HttpPostData
 }
 
