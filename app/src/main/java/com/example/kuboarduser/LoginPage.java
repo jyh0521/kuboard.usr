@@ -52,7 +52,7 @@ public class LoginPage extends AppCompatActivity {
 
         // 이메일, 비밀번호, 비밀번호 확인 칸이 비어있는지 확인
         if(id.length() > 0 && pw.length() > 0) {
-            url = "http://59.10.235.233/kuboard/login.php";
+            url = "http://218.152.181.81/kuboard/login/login.php";
             param = "id=" + id + "&pw=" + pw;
             setValuePHP = new SetValuePHP(url, param);
             setValuePHP.start();

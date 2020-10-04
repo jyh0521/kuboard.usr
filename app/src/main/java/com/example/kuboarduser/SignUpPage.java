@@ -59,7 +59,7 @@ public class SignUpPage extends AppCompatActivity {
                 startToast("학번은 10자리 입니다.");
             }
             else if (pw.equals(pwChk)) {
-                url = "http://59.10.235.233/kuboard/signUp.php";
+                url = "http://218.152.181.81/kuboard/signUp/signUp.php";
                 param = "id=" + id + "&pw=" + pw + "&name=" + name + "&major=" + major;
                 setValuePHP = new SetValuePHP(url, param);
                 setValuePHP.start();
