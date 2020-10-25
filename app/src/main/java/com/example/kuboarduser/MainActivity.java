@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private FragmentManager fm;
     private FragmentTransaction ft;
 
-    private ChatFragment chatFragment;
+    private BusFragment busFragment;
     private BoardFragment boardFragment;
     private CalendarFragment calendarFragment;
 
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        chatFragment = new ChatFragment();
+        busFragment = new BusFragment();
         boardFragment = new BoardFragment();
         calendarFragment = new CalendarFragment();
 
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 ft.commit();
                 break;
             case 1:
-                ft.replace(R.id.main_frame, chatFragment);
+                ft.replace(R.id.main_frame, busFragment);
                 ft.commit();
                 break;
             case 2:

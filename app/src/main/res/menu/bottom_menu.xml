@@ -4,8 +4,8 @@
     <item
         android:id="@+id/action_chat"
         android:enabled="true"
-        android:icon="@drawable/ic_bottom_menu_chat"
-        android:title="채팅"/>
+        android:icon="@drawable/ic_bottom_menu_bus"
+        android:title="버스"/>
 
     <item
         android:id="@+id/action_board"
