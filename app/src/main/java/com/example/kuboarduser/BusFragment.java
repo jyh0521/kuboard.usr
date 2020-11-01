@@ -60,15 +60,6 @@ public class BusFragment extends Fragment {
 
         String result = getValuePHP.getResult();
 
-        // php에서 불러온 값을 JSON 형태로 받아와서 출력 : Key & Value 형태
-        try {
-            JSONObject root = new JSONObject(result);
-            String temp = root.getString("result");
-            System.out.println("temp: " + temp);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
         // php에서 불러온 값을 JSON 형태로 받아와서 출력 : 배열 형태
         try {
             JSONObject root = new JSONObject(result);

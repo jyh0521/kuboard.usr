@@ -2,6 +2,7 @@ package com.example.kuboarduser;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.kuboarduser.preferenceManager.PreferenceManager;
 import com.example.kuboarduser.usePHP.SetValuePHP;
 
 public class LoginPage extends AppCompatActivity {
@@ -16,21 +18,29 @@ public class LoginPage extends AppCompatActivity {
     private String url;
     private String result;
 
+    private EditText editTextId;
+    private EditText editTextPw;
+
     private Button btn_login;
     private Button btn_signUp;
 
     private SetValuePHP setValuePHP;
 
+    private static Context context;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
+        context = this;
 
         // 로그인 버튼을 누른 경우, 인증 성공 시 메인으로 이동
         btn_login = findViewById(R.id.btn_login);
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                editTextId = (EditText)findViewById(R.id.editText_id);
+                editTextPw = (EditText)findViewById(R.id.editText_password);
                 login();
             }
         });
@@ -47,8 +57,8 @@ public class LoginPage extends AppCompatActivity {
     }
 
     private void login() {
-        String id = ((EditText)findViewById(R.id.editText_id)).getText().toString();
-        String pw = ((EditText)findViewById(R.id.editText_password)).getText().toString();
+        String id = editTextId.getText().toString();
+        String pw = editTextPw.getText().toString();
 
         // 이메일, 비밀번호, 비밀번호 확인 칸이 비어있는지 확인
         if(id.length() > 0 && pw.length() > 0) {
@@ -67,6 +77,12 @@ public class LoginPage extends AppCompatActivity {
             if(result.equals("login")) {
                 Intent intent = new Intent(LoginPage.this, MainActivity.class);
                 startToast("로그인 되었습니다.");
+
+                PreferenceManager.setString(context, "loginId", id);
+
+                editTextId.setText("");
+                editTextPw.setText("");
+
                 startActivity(intent);
             } else {
                 startToast("아이디 혹은 비밀번호를 다시 확인해주세요.");
@@ -80,5 +96,9 @@ public class LoginPage extends AppCompatActivity {
     // Toast 메시지 출력
     private void startToast(String msg) {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+    }
+
+    public static Context getContext() {
+        return context;
     }
 }
