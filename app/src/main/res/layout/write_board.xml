@@ -20,7 +20,7 @@
         android:layout_height="400dp"
         android:hint="내용"
         android:textSize="25dp" />
-<LinearLayout
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal" >
@@ -38,7 +38,7 @@
         android:text="글작성"
         android:layout_weight="1"
         />
-</LinearLayout>
+        </LinearLayout>
 
 
 
