@@ -1,52 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text=""
+        android:text="KU 게시판"
         android:textSize="30dp"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="45dp" />
+         />
 
     <EditText
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="제목"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="102dp" />
+      />
 
     <EditText
         android:id="@+id/content"
         android:layout_width="fill_parent"
         android:layout_height="400dp"
         android:layout_margin="5dp"
-        android:background="@null"
         android:gravity="top|start"
-        android:hint="내용"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="155dp" />
+        android:hint="내용" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="목록으로"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="573dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="수정"
-        tools:layout_editor_absoluteX="323dp"
-        tools:layout_editor_absoluteY="573dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="목록으로"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="수정" />
+    </LinearLayout>
+
+
+</LinearLayout>
