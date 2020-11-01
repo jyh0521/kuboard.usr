@@ -7,7 +7,9 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
+import com.example.kuboarduser.preferenceManager.PreferenceManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.action_board:
                         setFragment(0);
                         break;
-                    case R.id.action_chat:
+                    case R.id.action_bus:
                         setFragment(1);
                         break;
                     case R.id.action_calendar:
@@ -50,14 +52,16 @@ public class MainActivity extends AppCompatActivity {
         calendarFragment = new CalendarFragment();
 
         // 첫 화면(게시판) 출력
+        bottomNavigationView.setSelectedItemId(R.id.action_board);
         setFragment(0);
     }
 
     @Override public void onBackPressed() {
         super.onBackPressed();
+        startToast("로그아웃 되었습니다.");
+        PreferenceManager.removeKey(LoginPage.getContext(), "loginId");
         moveTaskToBack(true);
-        android.os.Process.killProcess(android.os.Process.myPid());
-        System.exit(1);
+        finishAndRemoveTask();
     }
 
     // Fragment 교체
@@ -78,6 +82,10 @@ public class MainActivity extends AppCompatActivity {
                 ft.commit();
                 break;
         }
+    }
 
+    // Toast 메시지 출력
+    private void startToast(String msg) {
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 }
