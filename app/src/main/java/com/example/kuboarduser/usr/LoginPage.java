@@ -1,4 +1,4 @@
-package com.example.kuboarduser;
+package com.example.kuboarduser.usr;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.kuboarduser.main.MainActivity;
+import com.example.kuboarduser.R;
 import com.example.kuboarduser.preferenceManager.PreferenceManager;
 import com.example.kuboarduser.usePHP.SetValuePHP;
 
@@ -33,6 +35,12 @@ public class LoginPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
         context = this;
+
+        // 로그인 아이디가 데이터에 남아있는경우 지우기
+        String chk = PreferenceManager.getString(LoginPage.getContext(), "loginId");
+        if(!chk.equals("")) {
+            PreferenceManager.removeKey(LoginPage.getContext(), "loginId");
+        }
 
         // 로그인 버튼을 누른 경우, 인증 성공 시 메인으로 이동
         btn_login = findViewById(R.id.btn_login);

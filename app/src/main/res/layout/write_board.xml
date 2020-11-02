@@ -6,7 +6,7 @@
     android:orientation="vertical"
     >
     <EditText
-        android:id="@+id/title"
+        android:id="@+id/title_Et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="제목"
@@ -15,7 +15,7 @@
         />
 
     <EditText
-        android:id="@+id/content"
+        android:id="@+id/content_Et"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:hint="내용"
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
         <Button
-            android:id="@+id/button"
+            android:id="@+id/back_Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="목록으로"
@@ -33,6 +33,7 @@
             />
 
         <Button
+            android:id="@+id/write_Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="글작성"

@@ -12,16 +12,17 @@
         android:usesCleartextTraffic="true">
 
         <!--시작 페이지: LoginPage-->
-        <activity android:name=".LoginPage">
+        <activity android:name=".usr.LoginPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpPage" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".BoardWrite" />
+        <activity android:name=".usr.SignUpPage" />
+        <activity android:name=".main.MainActivity" />
+        <activity android:name=".board.BoardWrite" />
+        <activity android:name=".board.BoardLookUp" />
     </application>
 
     <!-- 외부로의 접근을 위한 인터넷 사용 허가 설정 -->

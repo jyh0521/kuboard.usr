@@ -1,4 +1,4 @@
-package com.example.kuboarduser;
+package com.example.kuboarduser.main;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +9,12 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.kuboarduser.R;
+import com.example.kuboarduser.board.BoardFragment;
+import com.example.kuboarduser.bustimetable.BusFragment;
+import com.example.kuboarduser.calendar.CalendarFragment;
 import com.example.kuboarduser.preferenceManager.PreferenceManager;
+import com.example.kuboarduser.usr.LoginPage;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {

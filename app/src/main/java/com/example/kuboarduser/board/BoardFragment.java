@@ -1,10 +1,11 @@
-package com.example.kuboarduser;
+package com.example.kuboarduser.board;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -15,7 +16,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.kuboarduser.R;
+import com.example.kuboarduser.board.BoardWrite;
+import com.example.kuboarduser.preferenceManager.PreferenceManager;
 import com.example.kuboarduser.usePHP.GetValuePHP;
+import com.example.kuboarduser.usr.LoginPage;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -42,6 +47,9 @@ public class BoardFragment extends Fragment {
     // 버튼
     private Button write_btn;
 
+    // 선택된 게시판 id
+    private String selectedId;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -58,6 +66,22 @@ public class BoardFragment extends Fragment {
         write_btn.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), BoardWrite.class);
+                intent.putExtra("flag", "write");
+
+                startActivity(intent);
+            }
+        });
+
+        // 게시판 글 중 하나 선택 시
+        boardlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                selectedId = (String)parent.getAdapter().getItem(position).toString().substring(0, 3).trim();
+
+                Intent intent = new Intent(getActivity(), BoardLookUp.class);
+                intent.putExtra("idx", selectedId);
+
                 startActivity(intent);
             }
         });
@@ -93,7 +117,7 @@ public class BoardFragment extends Fragment {
                 String usrId = jo.getString("usrId");
                 String inputList = "";
 
-                inputList = idx + " " + title + " " + date + " " + usrId;
+                inputList = idx + "       " + title + " " + date + " " + usrId;
 
                 data.add(inputList);
             }

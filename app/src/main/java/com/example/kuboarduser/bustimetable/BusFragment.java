@@ -1,4 +1,4 @@
-package com.example.kuboarduser;
+package com.example.kuboarduser.bustimetable;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.kuboarduser.R;
 import com.example.kuboarduser.usePHP.GetValuePHP;
 
 import org.json.JSONArray;
