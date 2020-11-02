@@ -48,6 +48,7 @@ public class BusFragment extends Fragment {
     }
 
     public void getBusTimeTable() {
+        data.clear();
         url = "http://218.152.181.81/kuboard/busTimeTable.php";
 
         getValuePHP = new GetValuePHP(url);

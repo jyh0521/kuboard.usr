@@ -21,6 +21,7 @@
         </activity>
         <activity android:name=".SignUpPage" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".BoardWrite" />
     </application>
 
     <!-- 외부로의 접근을 위한 인터넷 사용 허가 설정 -->

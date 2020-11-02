@@ -7,7 +7,6 @@
     tools:context=".MainActivity">
 
     <!-- 하단 메뉴 -->
-
     <!-- 메인 화면 / 이 부분에 화면을 뿌린다.-->
 
     <FrameLayout
