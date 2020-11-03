@@ -44,6 +44,8 @@
             android:id="@+id/back_Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_border"
             android:text="목록으로"
             android:layout_weight="1"/>
 
@@ -52,6 +54,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_border"
             android:visibility="invisible"
             android:text="수정" />
 
@@ -59,6 +63,8 @@
             android:id="@+id/del_Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_border"
             android:visibility="invisible"
             android:text="삭제"
             android:layout_weight="1"/>
