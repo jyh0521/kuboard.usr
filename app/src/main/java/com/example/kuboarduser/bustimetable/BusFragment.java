@@ -83,10 +83,10 @@ public class BusFragment extends Fragment {
                 }
 
                 if(num.length() == 2) {
-                    inputList = num + "               " + school + "                                " + station;
+                    inputList = num + " " + school + "                  " + station;
                 }
                 else {
-                    inputList = num + "                 " + school + "                                " + station;
+                    inputList = num + " " + school + "                    " + station;
                 }
 
                 data.add(inputList);
