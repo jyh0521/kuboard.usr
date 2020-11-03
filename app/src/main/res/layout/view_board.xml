@@ -7,25 +7,24 @@
     android:gravity="bottom">
 
     <TextView
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="40dp"
         android:text="KU 게시판"
         android:textSize="30dp"
-         />
+        />
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/title_Tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="제목"
         android:textSize="25dp"
-      />
+        />
 
     <TextView
-        android:id="@+id/content"
+        android:id="@+id/content_Tv"
         android:layout_width="fill_parent"
         android:layout_height="400dp"
         android:layout_marginTop="4dp"
@@ -38,21 +37,25 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/back_Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="목록으로"
             android:layout_weight="1"/>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/upt_Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:visibility="invisible"
             android:text="수정" />
+
         <Button
+            android:id="@+id/del_Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="invisible"
             android:text="삭제"
             android:layout_weight="1"/>
     </LinearLayout>

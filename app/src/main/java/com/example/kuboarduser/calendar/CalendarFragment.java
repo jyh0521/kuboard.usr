@@ -1,6 +1,5 @@
-package com.example.kuboarduser;
+package com.example.kuboarduser.calendar;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,8 +17,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.kuboarduser.R;
 import com.example.kuboarduser.preferenceManager.PreferenceManager;
 import com.example.kuboarduser.usePHP.SetValuePHP;
+import com.example.kuboarduser.usr.LoginPage;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -267,10 +268,7 @@ public class CalendarFragment extends Fragment {
         } catch (InterruptedException e) {
         }
 
-        System.out.println("result: " + result);
-
         startToast(result);
-
     }
 
     // 수정 버튼 이벤트

@@ -1,4 +1,4 @@
-package com.example.kuboarduser;
+package com.example.kuboarduser.usr;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.kuboarduser.R;
 import com.example.kuboarduser.usePHP.SetValuePHP;
 
 public class SignUpPage extends AppCompatActivity {

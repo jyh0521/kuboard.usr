@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-  >
+    >
     <EditText
-        android:id="@+id/title"
+        android:id="@+id/title_Et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="제목"
@@ -15,32 +15,33 @@
         />
 
     <EditText
-        android:id="@+id/content"
+        android:id="@+id/content_Et"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:hint="내용"
         android:textSize="25dp" />
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal" >
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="목록으로"
-        android:layout_weight="1"
-        />
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/back_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="목록으로"
+            android:layout_weight="1"
+            />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="글작성"
-        android:layout_weight="1"
-        />
-        </LinearLayout>
-
-
-
-
+        <Button
+            android:id="@+id/write_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="글작성"
+            android:layout_weight="1"
+            />
     </LinearLayout>
+
+
+
+
+</LinearLayout>
