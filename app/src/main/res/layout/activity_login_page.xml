@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
-        android:background="#B21010"
+        android:background="#AE0E36"
         android:text="KUBOARD"
         android:textColor="#FFFFFF"
         android:textSize="40sp"

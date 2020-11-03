@@ -10,17 +10,21 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="55dp"
+        android:background="#AE0E36"
+        android:textColor="#FFFFFF"
         android:text="버스 시간표"
         android:textSize="30sp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+      />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="      학교                       조치원역"
-        android:textSize="20sp"
+        android:text="    학교                       조치원역"
+        android:layout_marginTop="4dp"
+        android:textSize="18sp"
         android:layout_gravity="center"/>
 
     <ListView
