@@ -1,6 +1,7 @@
 package com.example.kuboarduser.calendar;
 
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -185,6 +186,14 @@ public class CalendarFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 // 일정 선택 시 해당 일정을 받아온다.
                 updateContent = (String)parent.getAdapter().getItem(position);
+            }
+        });
+
+        contextEditText.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if(keyCode==event.KEYCODE_ENTER) return true;
+                return false;
             }
         });
 
