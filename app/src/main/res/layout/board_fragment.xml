@@ -34,7 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:listSelector="#BFBEBE"
-        android:background="#FFFFFF" />
+        android:background="#FFFFFF"
+        />
 
     <Button
         android:id="@+id/write_btn"
