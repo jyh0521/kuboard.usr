@@ -22,15 +22,15 @@
         android:layout_height="wrap_content"
         android:hint="제목"
         android:textSize="25dp"
-        android:background="#E3E3E3"
+        android:background="#FFFFFF"
         android:layout_marginTop="10dp"
         />
 
     <EditText
         android:id="@+id/content_Et"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:background="#E3E3E3"
+        android:layout_height="450dp"
+        android:background="#FFFFFF"
         android:hint="내용"
         android:textSize="25dp"
         android:layout_marginTop="10dp"/>
@@ -44,9 +44,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="목록으로"
-            android:background="#E3E3E3"
+            android:background="#D1D1D1"
             android:layout_weight="1"
             android:textSize="20dp"
+
             />
         <TextView
             android:layout_width="wrap_content"
@@ -57,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="글작성"
-            android:background="#E3E3E3"
+            android:background="#D1D1D1"
             android:layout_weight="1"
             android:textSize="20dp"
             />

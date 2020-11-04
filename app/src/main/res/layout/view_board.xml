@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="#E3E3E3"
+        android:background="#FFFFFF"
         android:text="제목"
         android:textSize="25dp"
         />
@@ -31,8 +31,8 @@
     <TextView
         android:id="@+id/content_Tv"
         android:layout_width="fill_parent"
-        android:background="#E3E3E3"
-        android:layout_height="400dp"
+        android:background="#FFFFFF"
+        android:layout_height="450dp"
         android:layout_marginTop="10dp"
         android:text="내용"
         android:textSize="25dp"/>
@@ -47,29 +47,32 @@
             android:id="@+id/back_Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:textColor="#ffffff"
-            android:background="@drawable/btn_border"
+            android:background="#D1D1D1"
             android:textSize="20dp"
             android:text="목록으로"
             android:layout_weight="1"/>
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "/>
         <Button
             android:id="@+id/upt_Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textColor="#ffffff"
-            android:background="@drawable/btn_border"
+            android:background="#D1D1D1"
             android:visibility="invisible"
             android:text="수정" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "/>
 
         <Button
             android:id="@+id/del_Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ffffff"
-            android:background="@drawable/btn_border"
+            android:background="#D1D1D1"
             android:visibility="invisible"
             android:text="삭제"
             android:layout_weight="1"/>
