@@ -22,7 +22,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=" 순서      제목                     시간                    작성자    "
+        android:text=" 순서      제목                   시간                작성자    "
         android:layout_marginTop="10dp"
         android:textSize="14sp"
         android:textColor="#FFFFFF"
