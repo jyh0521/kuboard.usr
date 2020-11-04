@@ -67,26 +67,26 @@
         android:id="@+id/btn_signUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
+        android:background="#D1D1D1"
         android:text="회원가입"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_cancel"
         app:layout_constraintStart_toStartOf="@+id/editText_id"
         app:layout_constraintTop_toBottomOf="@+id/editText_id"
-        app:layout_constraintVertical_bias="0.322" />
+        app:layout_constraintVertical_bias="0.315" />
 
     <Button
         android:id="@+id/btn_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
-        android:background="#ffffff"
+        android:background="#D1D1D1"
         android:text="취소"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/editText_id"
         app:layout_constraintStart_toEndOf="@+id/btn_signUp"
         app:layout_constraintTop_toBottomOf="@+id/editText_id"
-        app:layout_constraintVertical_bias="0.322" />
+        app:layout_constraintVertical_bias="0.315" />
 
     <TextView
         android:id="@+id/textView2"
