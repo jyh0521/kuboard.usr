@@ -4,40 +4,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#9e2d31"
     >
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="40dp"
+    android:background="#9e2d31"
+    android:textColor="#FFFFFF"
+    android:text="KU 게시판"
+    android:textSize="30dp"
+    />
     <EditText
         android:id="@+id/title_Et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="제목"
         android:textSize="25dp"
-        android:layout_marginTop="40dp"
+        android:background="#E3E3E3"
+        android:layout_marginTop="10dp"
         />
 
     <EditText
         android:id="@+id/content_Et"
         android:layout_width="match_parent"
         android:layout_height="400dp"
+        android:background="#E3E3E3"
         android:hint="내용"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
         <Button
             android:id="@+id/back_Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="목록으로"
+            android:background="#E3E3E3"
             android:layout_weight="1"
+            android:textSize="20dp"
             />
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "/>
         <Button
             android:id="@+id/write_Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="글작성"
+            android:background="#E3E3E3"
             android:layout_weight="1"
+            android:textSize="20dp"
             />
     </LinearLayout>
 

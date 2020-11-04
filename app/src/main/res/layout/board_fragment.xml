@@ -5,7 +5,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#9e2d31">
 
     <TextView
         android:id="@+id/board"
@@ -13,24 +14,33 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"
         android:layout_gravity="center"
-        android:background="#AE0E36"
+        android:background="#9e2d31"
         android:textColor="#FFFFFF"
         android:text="KU게시판"
         android:textSize="30sp"
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 순서           제목               시간       작성자    "
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"/>
 
     <ListView
         android:id="@+id/boardlist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:listSelector="#00C4FF"/>
+        android:listSelector="#BFBEBE"
+        android:background="#FFFFFF" />
 
     <Button
         android:id="@+id/write_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-         android:layout_marginBottom="50dp"
+         android:layout_marginBottom="40dp"
         android:textColor="#ffffff"
         android:background="@drawable/btn_border"
         android:textSize="20dp"
