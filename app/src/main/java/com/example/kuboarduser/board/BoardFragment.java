@@ -119,7 +119,7 @@ public class BoardFragment extends Fragment {
                 String usrId = jo.getString("usrId");
                 String inputList = "";
 
-                inputList = idx + "       " + title + " " + date + " " + usrId;
+                inputList = idx + "       " + title + "            " + date + "      " + usrId;
 
                 data.add(inputList);
             }
