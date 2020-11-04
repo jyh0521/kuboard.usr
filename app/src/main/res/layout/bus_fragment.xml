@@ -21,10 +21,11 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="wrap_content"
+        android:layout_width="420dp"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:background="#ffffff"
-        android:text="     학교                  조치원역"
+        android:text="학교                  조치원역"
         android:layout_marginTop="4dp"
         android:textSize="18sp"
         android:layout_gravity="center"/>
