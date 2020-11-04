@@ -4,27 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9e2d31"
     tools:context=".usr.SignUpPage">
 
     <EditText
         android:id="@+id/editText_name"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="188dp"
+        android:background="#ffffff"
         android:ems="10"
         android:hint="이름"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText_password"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="32dp"
         android:ems="10"
+        android:background="#ffffff"
         android:hint="비밀번호"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,9 +38,10 @@
     <EditText
         android:id="@+id/editText_passwordChk"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="32dp"
         android:ems="10"
+        android:background="#ffffff"
         android:hint="비밀번호 확인"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,9 +52,10 @@
     <EditText
         android:id="@+id/editText_major"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="32dp"
         android:ems="10"
+        android:background="#ffffff"
         android:hint="학과"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,46 +67,48 @@
         android:id="@+id/btn_signUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#ffffff"
         android:text="회원가입"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_cancel"
         app:layout_constraintStart_toStartOf="@+id/editText_id"
         app:layout_constraintTop_toBottomOf="@+id/editText_id"
-        app:layout_constraintVertical_bias="0.275" />
+        app:layout_constraintVertical_bias="0.322" />
 
     <Button
         android:id="@+id/btn_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
+        android:background="#ffffff"
         android:text="취소"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/editText_id"
         app:layout_constraintStart_toEndOf="@+id/btn_signUp"
         app:layout_constraintTop_toBottomOf="@+id/editText_id"
-        app:layout_constraintVertical_bias="0.275" />
+        app:layout_constraintVertical_bias="0.322" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#AE0E36"
-        android:textColor="#FFFFFF"
+        android:background="#9e2d31"
         android:text="회원가입"
+        android:textColor="#FFFFFF"
         android:textSize="40dp"
         app:layout_constraintBottom_toTopOf="@+id/editText_name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.477" />
+        app:layout_constraintVertical_bias="0.71" />
 
     <EditText
         android:id="@+id/editText_id"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="32dp"
         android:ems="10"
+        android:background="#ffffff"
         android:hint="학번"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
