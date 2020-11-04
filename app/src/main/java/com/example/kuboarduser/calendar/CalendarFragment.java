@@ -303,6 +303,8 @@ public class CalendarFragment extends Fragment {
         }
 
         startToast("삭제 되었습니다.");
+
+        System.out.println("result: " + usrId + date + updateContent);
     }
 
     // Toast 메시지 출력

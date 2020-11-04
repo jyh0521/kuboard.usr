@@ -76,17 +76,17 @@ public class BusFragment extends Fragment {
                 String inputList = "";
 
                 if(school.equals("")) {
-                    school = "          ";
+                    school = "        ";
                 }
                 else {
                     school = school.substring(0, 5);
                 }
 
                 if(num.length() == 2) {
-                    inputList = num + "     " + school + "                  " + station;
+                    inputList = num + "                  " + school + "                      " + station;
                 }
                 else {
-                    inputList = num + "     " + school + "                    " + station;
+                    inputList = num + "                    " + school + "                      " + station;
                 }
 
                 data.add(inputList);

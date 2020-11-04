@@ -103,6 +103,8 @@ public class BoardFragment extends Fragment {
 
         String result = getValuePHP.getResult();
 
+        System.out.println("result: " + result);
+
         // php에서 불러온 값을 JSON 형태로 받아와서 출력 : 배열 형태
         try {
             JSONObject root = new JSONObject(result);
@@ -113,7 +115,7 @@ public class BoardFragment extends Fragment {
                 JSONObject jo = ja.getJSONObject(i);
                 String idx = jo.getString("idx");
                 String title = jo.getString("title");
-                String date = jo.getString("date");
+                String date = jo.getString("date").substring(0, 10);
                 String usrId = jo.getString("usrId");
                 String inputList = "";
 

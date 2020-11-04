@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e0e0e0"
+    android:backgroundTint="#9e2d31"
     tools:context=".main.MainActivity">
 
     <!-- 하단 메뉴 -->
